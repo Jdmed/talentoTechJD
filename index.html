@@ -7,13 +7,37 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <h1>Bienvenido al Servicio de Grúas</h1> 
     <div class="container">
-        <h1>Welcome to my website!</h1> 
         <form action="">
-            <input type="text" name="username" placeholder="Username">
-            <input type="password" name="password" placeholder="Password">
-            <button>Login</button>
-            <button>Register</button>
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="username" placeholder="Nombre">
+            <p id="errorName" style="display: none;"></p>
+            <br>
+
+            <label for="phone">Teléfono</label>
+            <input type="text" id="phone" name="phone" placeholder="xxx-xxxx-xxx">
+            <p id="errorPhone" style="display: none;"></p>
+            <br>
+            
+            <label for="severidad">Por favor selecciones la severidad:</label>
+            <select name="severidad" id="severidad">
+                <option value="baja">Baja</option>
+                <option value="media">Media</option>
+                <option value="urgente">Urgente</option>
+            </select>
+            <br>
+
+            <label for="vehiculo">Seleccione su tipo de vehiculo:</label>
+            <select name="vehiculo" id="vehiculo">
+                <option value="automovil">Automovil</option>
+                <option value="camioneta">Camioneta</option>
+                <option value="motocicleta">Motocicleta</option>
+                <option value="microbus">Microbus</option>
+            </select>
+        </form>
+        <button id="btnSend">Send</button>    
     </div>
+    <script src="main.js"></script>
 </body>
 </html>
