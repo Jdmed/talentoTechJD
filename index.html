@@ -8,12 +8,19 @@
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to my website!</h1> 
+        <h1>Lista de tareas </h1> 
         <form action="">
-            <input type="text" name="username" placeholder="Username">
-            <input type="password" name="password" placeholder="Password">
-            <button>Login</button>
-            <button>Register</button>
+            <label for="tarea">Ingrese tarea</label>
+            <input type="text" name="tarea" id="tarea" placeholder="Tarea">
+            <p id="errorTarea" style="display: none;"></p>
+            <br>
+            <div> </div>
+
+            <button id="agregar">Agregar tarea</button>
+            <br>
+            <button id="mostrar">Mostrar tareas</button>
+        </form>
     </div>
+    <script src="main.js"></script>
 </body>
 </html>
